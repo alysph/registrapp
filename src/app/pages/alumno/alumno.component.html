@@ -1,0 +1,28 @@
+<ion-toolbar [style.visibilty]="content_visibility">
+  <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title>
+    Asistencia
+  </ion-title>
+</ion-toolbar>
+
+<ion-content [style.visibilty]="content_visibility">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <ion-button [style.visibilty]="content_visibility" expand="block" class="ion-margin" (click)="startScan()">Escanea el código QR</ion-button>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <ion-button expand="block" class="ion-margin" (click)="stopScan()">Detener</ion-button>
+
+  <ion-item *ngIf="scannedResult">
+    <ion-label class="ion-text-wrap">Resultado de escáner: {{scannedResult}}</ion-label>
+  </ion-item>
+</ion-content>

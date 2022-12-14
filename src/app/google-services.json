@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "127584676558",
+    "project_id": "registrappdc",
+    "storage_bucket": "registrappdc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127584676558:android:2302064b0ec5b2b0dabe9f",
+        "android_client_info": {
+          "package_name": "registrapp.duoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "127584676558-g7ltdk6jujd7dasn7l2q71rrk11tjsob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC30hy7Cuy2aTdjEozzdYbHLMZi2P-Ha1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127584676558-g7ltdk6jujd7dasn7l2q71rrk11tjsob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,60 @@
+<ion-toolbar>
+
+  <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title>
+    Inicio
+  </ion-title>
+  <ion-buttons slot="end">
+    <ion-button (click)="openMenu($event)">
+      <ion-icon slot="icon-only" name="body-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content class="background">
+
+  <ion-card>
+    <img src="/assets/Registrapp.png" class="ion-padding">
+    <ion-card-title style="padding-left: 10px;">¡Asistencia fácil y rápido!</ion-card-title>
+    <br>
+      <ion-card-subtitle style="padding-left: 10px;">Duoc UC</ion-card-subtitle>
+      <br>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Nosotros</ion-card-subtitle>
+      <ion-card-title>¿Quiénes Somos?</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="parrafo">
+        Somos un grupo de estudiante que está desarrollando una aplicación de asistencia con registro de codigo QR de forma más rápida y eficiente.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Sobre DUOC</ion-card-subtitle>
+      <ion-card-title>Misión</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="parrafo">
+        “Formar personas, en el ámbito técnico y profesional, con una sólida base ética inspirada en los valores cristianos, capaces de aportar en forma significativa al mundo laboral y comprometidas con el desarrollo de la sociedad.”
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Visión</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="parrafo">
+        “Ser la institución más reconocida del ámbito técnico profesional para la formación de personas, que se distinga por la pertinencia de su preparación disciplinar, humana y ética, inspirada en la identidad católica.”
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

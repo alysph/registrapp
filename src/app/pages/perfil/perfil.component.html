@@ -1,0 +1,48 @@
+
+
+<ion-header>
+
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>
+     Mi perfil
+    </ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content class="background">
+  
+  <ion-list *ngIf="info">
+    <ion-item>
+      <ion-label>
+        {{info.correo}}
+      </ion-label>
+      <ion-icon (click)="editAtributo('correo')" slot="end" name="create"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        {{info.nombre}}
+      </ion-label>
+      <ion-icon (click)="editAtributo('nombre')" slot="end" name="create"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        {{info.apellido}}
+      </ion-label>
+      <ion-icon (click)="editAtributo('apellido')" slot="end" name="create"></ion-icon>
+    </ion-item>
+  </ion-list>
+  <br>
+  <br>
+  <br>
+  <ion-card>
+    <img src="/assets/registrapp2.png" class="ion-padding">
+  </ion-card>
+</ion-content>

@@ -1,0 +1,72 @@
+<ion-menu-toggle>
+<ion-item detail="true" [routerLink]="['/home']">
+  <ion-icon name="grid-outline"></ion-icon>
+  <ion-label>
+    ¿Quiénes Somos?
+  </ion-label>
+</ion-item>
+</ion-menu-toggle>
+
+<ion-menu-toggle>
+  <ion-item detail="true" [routerLink]="['/noticia']">
+    <ion-icon name="earth-outline"></ion-icon>
+    <ion-label>
+      Noticias
+    </ion-label>
+  </ion-item>
+  </ion-menu-toggle>
+
+
+<ion-menu-toggle>
+<ion-item *ngIf="login == false" detail="true" [routerLink]="['/login']">
+  <ion-icon name="person-outline"></ion-icon>
+  <ion-label>
+    Login
+  </ion-label>
+</ion-item>
+</ion-menu-toggle>
+
+<ion-menu-toggle>
+<ion-item  *ngIf="login && rol == 'estudiante'" detail="true" [routerLink]="['/perfil']">
+  <ion-icon name="person-outline"></ion-icon>
+  <ion-label>
+    Perfil
+  </ion-label>
+</ion-item>
+</ion-menu-toggle>
+
+<ion-menu-toggle>
+  <ion-item  *ngIf="login && rol == 'docente'" detail="true" [routerLink]="['/perfil']">
+    <ion-icon name="person-outline"></ion-icon>
+    <ion-label>
+      Perfil
+    </ion-label>
+  </ion-item>
+  </ion-menu-toggle>
+
+<ion-menu-toggle>
+<ion-item *ngIf="rol === 'docente' " detail="true" [routerLink]="['/docente']" (click)="ira()">
+  <ion-icon name="briefcase-outline"></ion-icon>
+  <ion-label>
+    Asistencia
+  </ion-label>
+</ion-item>
+</ion-menu-toggle>
+
+<ion-menu-toggle>
+<ion-item *ngIf="rol === 'estudiante' "  detail="true" [routerLink]="['/alumno']" (click)="ira()">
+  <ion-icon name="people-circle-outline"></ion-icon>
+  <ion-label>
+    Asistencia
+  </ion-label>
+</ion-item>
+</ion-menu-toggle>
+
+<ion-menu-toggle *ngIf="login">
+<ion-item  detail="true" (click)="logout()">
+  <ion-icon name="share-outline"></ion-icon>
+  <ion-label>
+    Logout
+  </ion-label>
+</ion-item>
+</ion-menu-toggle>
