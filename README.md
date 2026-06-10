@@ -90,7 +90,7 @@ src/
    ionic serve
    ```
 
-> Nota: El escaneo de QR con cámara requiere ejecutar la app en un dispositivo físico o emulador Android/iOS mediante Capacitor. En el navegador solo estará disponible la generación de QR.
+> Nota: El escaneo de QR con cámara requiere ejecutar la app en un dispositivo físico o emulador Android mediante Capacitor. En el navegador solo estará disponible la generación de QR.
 
 ---
 
